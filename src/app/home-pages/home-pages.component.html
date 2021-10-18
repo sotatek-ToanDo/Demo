@@ -54,13 +54,13 @@
             <li
               class="list-group-item d-flex align-items-center"
               [style.backgroundColor]="item.isSelected ? '#d6d8db' : ''"
+              (click)="changeSelected(item)"
             >
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
                   class="custom-control-input"
                   [(ngModel)]="item.isSelected"
-                  [checked]="item.isSelected"
                 /><label class="custom-control-label">{{ item.name }}</label>
                 <a
                   class="btn btn-outline-danger ml-auto"
