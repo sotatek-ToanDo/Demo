@@ -39,7 +39,8 @@
         color: #495057;
         background-color: #fff;
         background-clip: padding-box;
-        border: 1px solid #ced4da;
+        // border: 1px solid #ced4da;
+        // border: none;
         border-radius: 0.25rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
@@ -98,6 +99,8 @@
   }
   .custom-control {
     position: relative;
+    height: 38px;
+    line-height: 38px;
     z-index: 1;
     display: block;
     min-height: 1.5rem;
@@ -118,6 +121,7 @@
       position: relative;
       margin-bottom: 0;
       vertical-align: top;
+      margin-left: 0.6em;
     }
   }
 }
@@ -158,4 +162,17 @@
 .btn-outline-danger {
   color: #dc3545;
   border-color: #dc3545;
+}
+
+.input-error {
+  border: #dc3545 1px solid !important;
+  background-image: '../../assets/images/download.svg';
+}
+
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+  background-image: url('../../assets/images/download.svg');
+  background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
 }

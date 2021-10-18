@@ -13,6 +13,7 @@ export class HomePagesComponent implements OnInit {
   listDate: any;
   date = new Date() || null;
   currentDate: any;
+  image= "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e";
   constructor(private fb: FormBuilder, private datePipe: DatePipe) {
     this.listDate = [];
     this.userForm = this.fb.group({
@@ -41,9 +42,7 @@ export class HomePagesComponent implements OnInit {
     this.userForm.reset();
   }
   removeItem(element: any) {
-    console.log(element);
     this.listDate = this.listDate.filter((item: any) => item !== element);
-    console.log(this.listDate);
   }
   changeSelected(event:any){
     event.isSelected = !event.isSelected;
