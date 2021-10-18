@@ -1,0 +1,168 @@
+.card {
+  background-color: #28a745 !important;
+  color: #ffffff;
+  margin: 0 10%;
+  padding: 0 15px;
+  font-family: "apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;";
+  font-weight: 500;
+  line-height: 1.2;
+
+  .header {
+    width: 100%;
+    text-align: right;
+    color: #ffffff;
+    .text-center {
+      text-align: center;
+    }
+  }
+  .box {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+    .invalid-feedback{
+      color: #d61010;
+    }
+    .input-group {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      input {
+        padding: 0.375rem 0.75rem;
+      }
+      .form-control {
+        display: block;
+        width: calc(100% - 5rem);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+    }
+    .btn {
+      display: inline-block;
+      font-weight: 400;
+      color: #212529;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      user-select: none;
+      background-color: initial;
+      border: 1px solid #0000;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: 0.25rem;
+    }
+    .btn-primary {
+      color: #fff;
+      background-color: #09a8be;
+      border-color: #09a8be;
+    }
+  }
+}
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+  color: #444444;
+  margin: 0 10%;
+  font-family: "apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;";
+  font-weight: 500;
+  line-height: 1.2;
+  .list-group-item:first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .list-group-item-secondary {
+    color: #383d41;
+    background-color: #d6d8db;
+  }
+  .custom-control {
+    position: relative;
+    z-index: 1;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-print-color-adjust: exact;
+    width: auto;
+    // .custom-control-input {
+    //   width: 1rem;
+    //   height: 1rem;
+    //   opacity: 0;
+    //   box-sizing: border-box;
+    //   padding: 0;
+    //   border: 1px solid #adb5bd;
+    // }
+    input[type="checkbox"] {
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid #adb5bd;
+    }
+    input[type="checked"] {
+      color: #fff;
+      border-color: #09a8be;
+      background-color: #09a8be;
+    }
+    .custom-control-label {
+      position: relative;
+      margin-bottom: 0;
+      vertical-align: top;
+    }
+    
+
+   
+  }
+}
+.selected-div{
+  background-color: #09a8be !important;
+}
+.custom-control-input:checked{
+  color: #fff;
+  border-color: #09a8be;
+  background-color: #09a8be;
+  border-radius: .25rem;
+}
+.ml-auto {
+  float: right;
+  width: auto;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: initial;
+  border: 1px solid #0000;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
