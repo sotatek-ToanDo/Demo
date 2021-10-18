@@ -45,4 +45,7 @@ export class HomePagesComponent implements OnInit {
     this.listDate = this.listDate.filter((item: any) => item !== element);
     console.log(this.listDate);
   }
+  changeSelected(event:any){
+    event.isSelected = !event.isSelected;
+  }
 }
